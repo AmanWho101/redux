@@ -13,7 +13,8 @@ export const MovieList = ()=>{
     <>
         <h1>Movie List</h1>
         {movies.map((data)=>(
-            <div key={data.id}>{data.name}
+            <div key={data.id}>
+                <label>Title:</label> {data.name} &nbsp;&nbsp; <label>rating:</label> {data.rating}
             <button onClick={()=>handleDelete(data.id)} >delete</button>
             </div>
         ))}
